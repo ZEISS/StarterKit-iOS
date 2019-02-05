@@ -1,5 +1,5 @@
-# Created by https://www.gitignore.io/api/xcode,swift,carthage,cocoapods
-# Edit at https://www.gitignore.io/?templates=xcode,swift,carthage,cocoapods
+# Created by https://www.gitignore.io/api/xcode,swift,macos,carthage,cocoapods
+# Edit at https://www.gitignore.io/?templates=xcode,swift,macos,carthage,cocoapods
 
 ### Carthage ###
 # Carthage
@@ -16,6 +16,34 @@ Carthage/Build
 #           - Also handy if you have a large number of dependant pods
 #           - AS PER https://guides.cocoapods.org/using/using-cocoapods.html NEVER IGNORE THE LOCK FILE
 Pods/
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
 
 ### Swift ###
 # Xcode
@@ -115,4 +143,4 @@ iOSInjectionProject/
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
-# End of https://www.gitignore.io/api/xcode,swift,carthage,cocoapods
+# End of https://www.gitignore.io/api/xcode,swift,macos,carthage,cocoapods
