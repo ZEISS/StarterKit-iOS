@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		DCF510F42209E3F700B4FCF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF510F32209E3F700B4FCF6 /* AppDelegate.swift */; };
-		DCF510F62209E3F700B4FCF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF510F52209E3F700B4FCF6 /* ViewController.swift */; };
-		DCF510F92209E3F700B4FCF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCF510F72209E3F700B4FCF6 /* Main.storyboard */; };
 		DCF510FB2209E3F900B4FCF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF510FA2209E3F900B4FCF6 /* Assets.xcassets */; };
 		DCF510FE2209E3F900B4FCF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCF510FC2209E3F900B4FCF6 /* LaunchScreen.storyboard */; };
+		DCF511082209E4CD00B4FCF6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF511072209E4CD00B4FCF6 /* HomeViewController.swift */; };
+		DCF5110A2209E4D700B4FCF6 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF511092209E4D700B4FCF6 /* InformationViewController.swift */; };
+		DCF5110E2209E91200B4FCF6 /* ZEISS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF5110D2209E91200B4FCF6 /* ZEISS.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DCF510F02209E3F700B4FCF6 /* StarterKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarterKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF510F32209E3F700B4FCF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DCF510F52209E3F700B4FCF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DCF510F82209E3F700B4FCF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCF510FA2209E3F900B4FCF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCF510FD2209E3F900B4FCF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCF510FF2209E3F900B4FCF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCF511072209E4CD00B4FCF6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DCF511092209E4D700B4FCF6 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		DCF5110D2209E91200B4FCF6 /* ZEISS.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ZEISS.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,46 @@
 			isa = PBXGroup;
 			children = (
 				DCF510F32209E3F700B4FCF6 /* AppDelegate.swift */,
-				DCF510F52209E3F700B4FCF6 /* ViewController.swift */,
-				DCF510F72209E3F700B4FCF6 /* Main.storyboard */,
+				DCF511052209E4A400B4FCF6 /* ViewControllers */,
+				DCF511062209E4B000B4FCF6 /* Supporting Files */,
+			);
+			path = StarterKit;
+			sourceTree = "<group>";
+		};
+		DCF511052209E4A400B4FCF6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DCF5110B2209E73B00B4FCF6 /* Home */,
+				DCF5110C2209E74300B4FCF6 /* Information */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DCF511062209E4B000B4FCF6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				DCF510FA2209E3F900B4FCF6 /* Assets.xcassets */,
 				DCF510FC2209E3F900B4FCF6 /* LaunchScreen.storyboard */,
 				DCF510FF2209E3F900B4FCF6 /* Info.plist */,
+				DCF5110D2209E91200B4FCF6 /* ZEISS.xcassets */,
 			);
-			path = StarterKit;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCF5110B2209E73B00B4FCF6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DCF511072209E4CD00B4FCF6 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DCF5110C2209E74300B4FCF6 /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				DCF511092209E4D700B4FCF6 /* InformationViewController.swift */,
+			);
+			path = Information;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCF510FE2209E3F900B4FCF6 /* LaunchScreen.storyboard in Resources */,
+				DCF5110E2209E91200B4FCF6 /* ZEISS.xcassets in Resources */,
 				DCF510FB2209E3F900B4FCF6 /* Assets.xcassets in Resources */,
-				DCF510F92209E3F700B4FCF6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +170,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCF510F62209E3F700B4FCF6 /* ViewController.swift in Sources */,
 				DCF510F42209E3F700B4FCF6 /* AppDelegate.swift in Sources */,
+				DCF511082209E4CD00B4FCF6 /* HomeViewController.swift in Sources */,
+				DCF5110A2209E4D700B4FCF6 /* InformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DCF510F72209E3F700B4FCF6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DCF510F82209E3F700B4FCF6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DCF510FC2209E3F900B4FCF6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
