@@ -20,6 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UINavigationController(rootViewController: InformationViewController())
         ]
         
+        SizzledTheme.enable()
+        SizzledTheme.ThemeView.appearance().backgroundColor = UIColor.white
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
