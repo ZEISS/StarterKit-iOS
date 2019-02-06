@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ]
         
         SizzledTheme.enable()
-        SizzledTheme.ThemeView.appearance().backgroundColor = UIColor.black
+        SizzledTheme.ThemeView.appearance().backgroundColor = UIColor.white
         WKWebView.appearance().backgroundColor = UIColor.black
         WKWebView.appearance().tintColor = UIColor.white
         
