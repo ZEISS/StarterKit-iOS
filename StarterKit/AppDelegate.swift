@@ -23,8 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         SizzledTheme.enable()
         SizzledTheme.ThemeView.appearance().backgroundColor = UIColor.white
-        WKWebView.appearance().backgroundColor = UIColor.black
-        WKWebView.appearance().tintColor = UIColor.white
+        WKWebView.appearance().backgroundColor = UIColor.white
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = tabBarController
