@@ -9,20 +9,20 @@
 import UIKit
 
 class OnboardingViewController: UIViewController {
-    static let version = "0.1"
+    static let version = "0.1.1"
     
     var stackView: UIStackView = {
        let stackView = UIStackView()
         stackView.axis = NSLayoutConstraint.Axis.vertical
         stackView.distribution = UIStackView.Distribution.fillProportionally
         stackView.alignment = UIStackView.Alignment.fill
+        stackView.spacing = 16
         return stackView
     }()
     
     var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.backgroundColor = UIColor.white
-        scrollView
         return scrollView
     }()
     
@@ -62,14 +62,15 @@ class OnboardingViewController: UIViewController {
         dismissButton.addTarget(self, action: #selector(dismissAction(sender:)), for: UIControl.Event.touchUpInside)
         
         let titleLabel = UILabel()
-        titleLabel.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.headline)
-        titleLabel.text = "What’s New"
+        titleLabel.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.title1)
+        titleLabel.text = "What’s New\nin StarterKit"
+        titleLabel.numberOfLines = 0
         stackView.addArrangedSubview(titleLabel)
         
         let bodyLabel = UILabel()
-        bodyLabel.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.headline)
+        bodyLabel.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.body)
         bodyLabel.numberOfLines = 0
-        bodyLabel.text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        bodyLabel.text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. \n\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. \n\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. \n\n"
         stackView.addArrangedSubview(bodyLabel)
         
         scrollView.addSubview(stackView)
@@ -93,11 +94,12 @@ class OnboardingViewController: UIViewController {
         dismissButton.topAnchor.constraint(equalToSystemSpacingBelow: scrollView.bottomAnchor, multiplier: 2.0).isActive = true
         
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
-        stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
-        stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
-        stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
-
+        stackView.topAnchor.constraint(equalTo: scrollView.readableContentGuide.topAnchor).isActive = true
+        stackView.leadingAnchor.constraint(equalTo: scrollView.readableContentGuide.leadingAnchor).isActive = true
+        scrollView.readableContentGuide.trailingAnchor.constraint(equalTo: stackView.trailingAnchor).isActive = true
+        scrollView.bottomAnchor.constraint(equalTo: stackView.bottomAnchor).isActive = true
+        
+        stackView.widthAnchor.constraint(equalTo: view.readableContentGuide.widthAnchor).isActive = true
     }
     
     @objc func dismissAction(sender: UIButton) {
