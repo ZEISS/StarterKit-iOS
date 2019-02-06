@@ -31,4 +31,30 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        presentOnboardingScreenIfNeeded()
+    }
+}
+
+extension HomeViewController {
+    func presentOnboardingScreenIfNeeded() {
+        if shouldPresentOnboardingScreen() {
+            presentOnboardingScreeen()
+        }
+    }
+    
+    func presentOnboardingScreeen() {
+        let viewController = OnboardingViewController()
+        present(viewController, animated: true, completion: nil)
+    }
+    
+    func shouldPresentOnboardingScreen() -> Bool {
+        if let version = UserDefaults.standard.string(forKey: "OnboardingCompletedForVersion"), version == OnboardingViewController.version {
+            return false
+        }
+        return true
+    }
 }
