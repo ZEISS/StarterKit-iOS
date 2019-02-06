@@ -10,6 +10,7 @@
 		6DB2D4F02209ECA600E0B9C4 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB2D4EF2209ECA600E0B9C4 /* UIColorExtensions.swift */; };
 		6DB2D4F6220A03C900E0B9C4 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB2D4F5220A03C900E0B9C4 /* UIViewControllerExtensions.swift */; };
 		6DB2D4F8220A042700E0B9C4 /* SizzledTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB2D4F7220A042700E0B9C4 /* SizzledTheme.swift */; };
+		6DB2D4FB220AEF4600E0B9C4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DB2D4FD220AEF4600E0B9C4 /* Localizable.strings */; };
 		DCF510F42209E3F700B4FCF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF510F32209E3F700B4FCF6 /* AppDelegate.swift */; };
 		DCF510FB2209E3F900B4FCF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF510FA2209E3F900B4FCF6 /* Assets.xcassets */; };
 		DCF510FE2209E3F900B4FCF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCF510FC2209E3F900B4FCF6 /* LaunchScreen.storyboard */; };
@@ -22,6 +23,7 @@
 		6DB2D4EF2209ECA600E0B9C4 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		6DB2D4F5220A03C900E0B9C4 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		6DB2D4F7220A042700E0B9C4 /* SizzledTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizzledTheme.swift; sourceTree = "<group>"; };
+		6DB2D4FC220AEF4600E0B9C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DCF510F02209E3F700B4FCF6 /* StarterKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarterKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF510F32209E3F700B4FCF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCF510FA2209E3F900B4FCF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				DCF510FC2209E3F900B4FCF6 /* LaunchScreen.storyboard */,
 				DCF510FF2209E3F900B4FCF6 /* Info.plist */,
 				DCF5110D2209E91200B4FCF6 /* ZEISS.xcassets */,
+				6DB2D4FD220AEF4600E0B9C4 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCF510FE2209E3F900B4FCF6 /* LaunchScreen.storyboard in Resources */,
+				6DB2D4FB220AEF4600E0B9C4 /* Localizable.strings in Resources */,
 				DCF5110E2209E91200B4FCF6 /* ZEISS.xcassets in Resources */,
 				DCF510FB2209E3F900B4FCF6 /* Assets.xcassets in Resources */,
 			);
@@ -215,6 +219,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		6DB2D4FD220AEF4600E0B9C4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DB2D4FC220AEF4600E0B9C4 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		DCF510FC2209E3F900B4FCF6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
