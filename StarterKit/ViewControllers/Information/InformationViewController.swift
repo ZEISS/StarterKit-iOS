@@ -18,7 +18,6 @@ class InformationViewController: UIViewController {
     
     convenience init() {
         self.init(nibName: nil, bundle: nil)
-        commonInit()
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
