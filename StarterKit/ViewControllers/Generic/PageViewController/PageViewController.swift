@@ -32,7 +32,6 @@ class PageViewController: UIViewController {
         let webView = WKWebView(frame: CGRect.zero, configuration: configuration)
         webView.navigationDelegate = self
         webView.isOpaque = false
-        webView.scrollView.delegate = self
         return webView
     }()
     
