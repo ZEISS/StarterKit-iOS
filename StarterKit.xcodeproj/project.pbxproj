@@ -120,9 +120,7 @@
 		6DB2D50D220AF9B000E0B9C4 /* Generic */ = {
 			isa = PBXGroup;
 			children = (
-				6DB2D50E220AF9C500E0B9C4 /* PageViewController.swift */,
-				DCF5111B220B14E400B4FCF6 /* PageViewController+WKNavigationDelegate.swift */,
-				DCF5111D220B151600B4FCF6 /* PageViewController+UIScrollViewDelegate.swift */,
+				DCF5111F220B24EA00B4FCF6 /* PageViewController */,
 			);
 			path = Generic;
 			sourceTree = "<group>";
@@ -193,6 +191,16 @@
 				DCF511092209E4D700B4FCF6 /* InformationViewController.swift */,
 			);
 			path = Information;
+			sourceTree = "<group>";
+		};
+		DCF5111F220B24EA00B4FCF6 /* PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6DB2D50E220AF9C500E0B9C4 /* PageViewController.swift */,
+				DCF5111B220B14E400B4FCF6 /* PageViewController+WKNavigationDelegate.swift */,
+				DCF5111D220B151600B4FCF6 /* PageViewController+UIScrollViewDelegate.swift */,
+			);
+			path = PageViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
