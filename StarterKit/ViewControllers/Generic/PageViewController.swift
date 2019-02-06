@@ -8,7 +8,6 @@
 
 import UIKit
 import WebKit
-import SafariServices
 
 class PageViewController: UIViewController {
     lazy var webView: WKWebView = {
@@ -83,31 +82,5 @@ class PageViewController: UIViewController {
         activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
         activityIndicatorView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         activityIndicatorView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-    }
-}
-
-extension PageViewController: WKNavigationDelegate {
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        activityIndicatorView.stopAnimating()
-    }
-    
-    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        if let url = navigationAction.request.url, navigationAction.navigationType == .linkActivated {
-            if url.absoluteString.hasPrefix("http") {
-                let viewController = SFSafariViewController(url: url)
-                present(viewController, animated: true)
-            } else {
-                UIApplication.shared.open(url)
-            }
-            decisionHandler(.cancel)
-        } else {
-            decisionHandler(.allow)
-        }
-    }
-}
-
-extension PageViewController: UIScrollViewDelegate {
-    func scrollViewDidZoom(_ scrollView: UIScrollView) {
-        scrollView.setContentOffset(.zero, animated: false)
     }
 }
