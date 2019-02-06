@@ -17,9 +17,6 @@ class PageViewController: UIViewController {
         meta.name = "viewport";
         meta.content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no";
         document.head.appendChild(meta);
-        var style = document.createElement('style');
-        style.innerHTML = 'body { background-color: \(WKWebView.appearance().backgroundColor?.hexColor ?? "#fff"); color: \(WKWebView.appearance().tintColor?.hexColor ?? "#000"); } h1, h2, h3, h4, h5, h6 { color: \(WKWebView.appearance().tintColor.hexColor); }';
-        document.head.appendChild(style);
         """
         
         let script: WKUserScript = WKUserScript(source: source, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
