@@ -201,7 +201,6 @@
 			children = (
 				6DB2D50E220AF9C500E0B9C4 /* PageViewController.swift */,
 				DCF5111B220B14E400B4FCF6 /* PageViewController+WKNavigationDelegate.swift */,
-				DCF5111D220B151600B4FCF6 /* PageViewController+UIScrollViewDelegate.swift */,
 			);
 			path = PageViewController;
 			sourceTree = "<group>";
@@ -296,7 +295,6 @@
 				6DB2D4F02209ECA600E0B9C4 /* UIColorExtensions.swift in Sources */,
 				DCF511082209E4CD00B4FCF6 /* HomeViewController.swift in Sources */,
 				6DB2D4F6220A03C900E0B9C4 /* UIViewControllerExtensions.swift in Sources */,
-				DCF5111E220B151600B4FCF6 /* PageViewController+UIScrollViewDelegate.swift in Sources */,
 				DCF5111C220B14E400B4FCF6 /* PageViewController+WKNavigationDelegate.swift in Sources */,
 				6DB2D4F8220A042700E0B9C4 /* SizzledTheme.swift in Sources */,
 				DCF5110A2209E4D700B4FCF6 /* InformationViewController.swift in Sources */,
