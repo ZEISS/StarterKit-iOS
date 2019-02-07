@@ -11,7 +11,6 @@ import WebKit
 
 class PageViewController: UIViewController {
     lazy var webView: WKWebView = {
-        let cssPath = Bundle.main.path(forResource: "Style", ofType: "css")!
         let source = """
         var meta = document.createElement('meta');
         meta.name = "viewport";
