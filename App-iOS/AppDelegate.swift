@@ -9,12 +9,20 @@
 import UIKit
 import WebKit
 
+#if canImport(SimulatorStatusMagiciOS)
+import SimulatorStatusMagiciOS
+#endif
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        #if canImport(SimulatorStatusMagiciOS)
+        SDStatusBarManager.sharedInstance()?.enableOverrides()
+        #endif
+        
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [
             UINavigationController(rootViewController: HomeViewController()),

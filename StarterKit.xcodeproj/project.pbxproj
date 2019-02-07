@@ -18,6 +18,7 @@
 		6DB2D50B220AF19000E0B9C4 /* Impressum.html in Resources */ = {isa = PBXBuildFile; fileRef = 6DB2D504220AF15400E0B9C4 /* Impressum.html */; };
 		6DB2D50C220AF19800E0B9C4 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 6DB2D507220AF16900E0B9C4 /* Style.css */; };
 		6DB2D50F220AF9C500E0B9C4 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB2D50E220AF9C500E0B9C4 /* PageViewController.swift */; };
+		DC6F43B1220CA62E00980E4D /* SimulatorStatusMagiciOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6F43B0220CA62E00980E4D /* SimulatorStatusMagiciOS.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		DCF510F42209E3F700B4FCF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF510F32209E3F700B4FCF6 /* AppDelegate.swift */; };
 		DCF510FB2209E3F900B4FCF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF510FA2209E3F900B4FCF6 /* Assets.xcassets */; };
 		DCF510FE2209E3F900B4FCF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCF510FC2209E3F900B4FCF6 /* LaunchScreen.storyboard */; };
@@ -53,6 +54,7 @@
 		6DB2D506220AF15400E0B9C4 /* Legal-Notices.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "Legal-Notices.html"; sourceTree = "<group>"; };
 		6DB2D507220AF16900E0B9C4 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
 		6DB2D50E220AF9C500E0B9C4 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		DC6F43B0220CA62E00980E4D /* SimulatorStatusMagiciOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SimulatorStatusMagiciOS.framework; path = Carthage/Build/iOS/SimulatorStatusMagiciOS.framework; sourceTree = "<group>"; };
 		DCF510F02209E3F700B4FCF6 /* App-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF510F32209E3F700B4FCF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCF510FA2209E3F900B4FCF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC6F43B1220CA62E00980E4D /* SimulatorStatusMagiciOS.framework in Frameworks */,
 				DCF51128220C396200B4FCF6 /* WhatsNewKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +238,7 @@
 		DCF51126220C396200B4FCF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC6F43B0220CA62E00980E4D /* SimulatorStatusMagiciOS.framework */,
 				DCF51127220C396200B4FCF6 /* WhatsNewKit.framework */,
 			);
 			name = Frameworks;
@@ -261,6 +265,7 @@
 				DCF510ED2209E3F700B4FCF6 /* Frameworks */,
 				DCF510EE2209E3F700B4FCF6 /* Resources */,
 				DCF51125220C38DA00B4FCF6 /* Carthage */,
+				DC6F43B2220CA66E00980E4D /* Embed SimulatorMagic */,
 			);
 			buildRules = (
 			);
@@ -356,6 +361,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		DC6F43B2220CA66E00980E4D /* Embed SimulatorMagic */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SimulatorStatusMagiciOS.framework",
+			);
+			name = "Embed SimulatorMagic";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SimulatorStatusMagiciOS.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script embeds (and codesigns) a framework within an iOS app binary, but only when the configuration is Debug.\n# It must be called from, or copied into an Xcode Run Script build phase with following setup:\n# Input Files:\n#     - Path to framework within project folder (source path)\n#     - For example: $(SRCROOT)/ThirdPartyFrameworks/SimulatorStatusMagiciOS.framework\n# Output Files:\n#     - Desired path to framework within ${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH} (destination path)\n#     - For example: ${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimulatorStatusMagiciOS.framework\n#\n# For explanation of Input & Output Files, check out: https://indiestack.com/2014/12/speeding-up-custom-script-phases/\n# This script adapted from: https://stackoverflow.com/a/40484337/9051514 (thanks Ricardo Duarte!)\n\nif [[ -z ${SCRIPT_INPUT_FILE_0} || -z ${SCRIPT_OUTPUT_FILE_0} ]]; then\necho \"This Xcode Run Script build phase must be configured with Input & Output Files\"\nexit 1\nfi\n\necho \"Embed ${SCRIPT_INPUT_FILE_0}\"\nif [[ $CONFIGURATION == 'Debug' ]]; then\nFRAMEWORK_SOURCE=${SCRIPT_INPUT_FILE_0}\nFRAMEWORK_DESTINATION=${SCRIPT_OUTPUT_FILE_0}\nDESTINATION_FOLDER=`dirname ${FRAMEWORK_DESTINATION}`\n\nmkdir -p ${DESTINATION_FOLDER}\ncp -Rv ${FRAMEWORK_SOURCE} ${FRAMEWORK_DESTINATION}\n\nCODE_SIGN_IDENTITY_FOR_ITEMS=\"${EXPANDED_CODE_SIGN_IDENTITY_NAME}\"\nif [ \"${CODE_SIGN_IDENTITY_FOR_ITEMS}\" = \"\" ] ; then\nCODE_SIGN_IDENTITY_FOR_ITEMS=\"${CODE_SIGN_IDENTITY}\"\nfi\n\nBINARY_NAME=`basename ${FRAMEWORK_DESTINATION} .framework`\ncodesign --force --verbose --sign \"${CODE_SIGN_IDENTITY_FOR_ITEMS}\" ${FRAMEWORK_DESTINATION}/${BINARY_NAME}\necho \" ✅ Embedded successfully\"\nelse\necho \" ❌ Non Debug build detected - do not embed\"\nfi\n";
+		};
 		DCF51125220C38DA00B4FCF6 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
