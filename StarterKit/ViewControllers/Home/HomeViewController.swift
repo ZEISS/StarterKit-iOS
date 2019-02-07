@@ -26,7 +26,7 @@ class HomeViewController: UIViewController {
     
     func commonInit() {
         title = NSLocalizedString("Home", comment: "")
-        tabBarItem = UITabBarItem(title: title, image: UIImage(named: "Home"), selectedImage: UIImage(named: "Home"))
+        tabBarItem = UITabBarItem(title: title, image: UIImage(named: "TabHome"), selectedImage: UIImage(named: "TabHome"))
     }
     
     override func viewDidLoad() {

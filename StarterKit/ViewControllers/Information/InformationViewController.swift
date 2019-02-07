@@ -32,7 +32,7 @@ class InformationViewController: UIViewController {
     
     func commonInit() {
         title = NSLocalizedString("Information", comment: "")
-        tabBarItem = UITabBarItem(title: title, image: UIImage(named: "Information"), selectedImage: UIImage(named: "Information"))
+        tabBarItem = UITabBarItem(title: title, image: UIImage(named: "TabInformation"), selectedImage: UIImage(named: "TabInformation"))
     }
     
     override func viewDidLoad() {

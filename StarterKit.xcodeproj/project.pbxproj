@@ -149,12 +149,12 @@
 		DCF510F22209E3F700B4FCF6 /* StarterKit */ = {
 			isa = PBXGroup;
 			children = (
-				6DB2D501220AF13C00E0B9C4 /* Static Pages */,
 				DCF510F32209E3F700B4FCF6 /* AppDelegate.swift */,
 				DCF511052209E4A400B4FCF6 /* ViewControllers */,
 				6DB2D4FE220AF0C300E0B9C4 /* Models */,
 				6DB2D4EE2209EC5F00E0B9C4 /* Extensions */,
 				6DB2D4F1220A039F00E0B9C4 /* Vendors */,
+				6DB2D501220AF13C00E0B9C4 /* Static Pages */,
 				DCF511062209E4B000B4FCF6 /* Supporting Files */,
 			);
 			path = StarterKit;
@@ -174,10 +174,10 @@
 			isa = PBXGroup;
 			children = (
 				DCF510FA2209E3F900B4FCF6 /* Assets.xcassets */,
-				DCF510FC2209E3F900B4FCF6 /* LaunchScreen.storyboard */,
-				DCF510FF2209E3F900B4FCF6 /* Info.plist */,
 				DCF5110D2209E91200B4FCF6 /* ZEISS.xcassets */,
+				DCF510FC2209E3F900B4FCF6 /* LaunchScreen.storyboard */,
 				6DB2D4FD220AEF4600E0B9C4 /* Localizable.strings */,
+				DCF510FF2209E3F900B4FCF6 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
