@@ -610,9 +610,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zeiss.StarterKitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = StarterKit;
+				TEST_TARGET_NAME = "App-iOS";
 			};
 			name = Debug;
 		};
@@ -629,9 +630,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zeiss.StarterKitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = StarterKit;
+				TEST_TARGET_NAME = "App-iOS";
 			};
 			name = Release;
 		};
