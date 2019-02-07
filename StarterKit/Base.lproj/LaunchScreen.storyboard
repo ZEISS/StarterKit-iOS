@@ -32,6 +32,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="XEd-r8-onW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AR5-JI-9MW">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -48,7 +49,7 @@
         <scene sceneID="wt4-zL-rFI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1e3-9g-FGi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="laj-fj-dlF"/>
+                    <tabBarItem key="tabBarItem" title="" image="TabHome" id="laj-fj-dlF"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ldw-vc-Kxi">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -83,7 +84,7 @@
         <scene sceneID="okg-tR-XYl">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Enb-gE-ywP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="ZW9-HK-lfi"/>
+                    <tabBarItem key="tabBarItem" title="" image="TabInformation" id="ZW9-HK-lfi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c5x-tG-qm3">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -99,4 +100,8 @@
             <point key="canvasLocation" x="1052" y="688.60569715142435"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TabHome" width="30" height="30"/>
+        <image name="TabInformation" width="30" height="30"/>
+    </resources>
 </document>
