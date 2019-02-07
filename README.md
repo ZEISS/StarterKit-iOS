@@ -24,16 +24,19 @@ git remote remove origin
 
 ## First use
 
-* Set bundle identifier
+* Set your own bundle identifier
+* Run carthage update to compile frameworks
 
-## Create screenshots automatically (fastlane)
+```bash
+carthage update --platform iOS
+```
+
+
+## Before deployment
+
+### Create screenshots automatically (fastlane)
 
 ```bash
 fastlane ios screenshots
 ```
 
-# Installation
-
-```bash
-carthage update --platform iOS
-```
