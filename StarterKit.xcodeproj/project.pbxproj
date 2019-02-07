@@ -25,8 +25,8 @@
 		DCF5110A2209E4D700B4FCF6 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF511092209E4D700B4FCF6 /* InformationViewController.swift */; };
 		DCF5110E2209E91200B4FCF6 /* ZEISS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF5110D2209E91200B4FCF6 /* ZEISS.xcassets */; };
 		DCF5111C220B14E400B4FCF6 /* PageViewController+WKNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF5111B220B14E400B4FCF6 /* PageViewController+WKNavigationDelegate.swift */; };
-		DCF5111E220B151600B4FCF6 /* PageViewController+UIScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF5111D220B151600B4FCF6 /* PageViewController+UIScrollViewDelegate.swift */; };
-		DCF51122220B259300B4FCF6 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF51121220B259300B4FCF6 /* OnboardingViewController.swift */; };
+		DCF51124220C37C300B4FCF6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DCF51123220C37C300B4FCF6 /* README.md */; };
+		DCF51128220C396200B4FCF6 /* WhatsNewKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF51127220C396200B4FCF6 /* WhatsNewKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,8 +51,8 @@
 		DCF5110D2209E91200B4FCF6 /* ZEISS.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ZEISS.xcassets; sourceTree = "<group>"; };
 		DCF5111A220B132500B4FCF6 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DCF5111B220B14E400B4FCF6 /* PageViewController+WKNavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PageViewController+WKNavigationDelegate.swift"; sourceTree = "<group>"; };
-		DCF5111D220B151600B4FCF6 /* PageViewController+UIScrollViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PageViewController+UIScrollViewDelegate.swift"; sourceTree = "<group>"; };
-		DCF51121220B259300B4FCF6 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		DCF51123220C37C300B4FCF6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DCF51127220C396200B4FCF6 /* WhatsNewKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WhatsNewKit.framework; path = Carthage/Build/iOS/WhatsNewKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF51128220C396200B4FCF6 /* WhatsNewKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +123,6 @@
 		6DB2D50D220AF9B000E0B9C4 /* Generic */ = {
 			isa = PBXGroup;
 			children = (
-				DCF51120220B257500B4FCF6 /* OnboardingViewController */,
 				DCF5111F220B24EA00B4FCF6 /* PageViewController */,
 			);
 			path = Generic;
@@ -131,8 +131,10 @@
 		DCF510E72209E3F700B4FCF6 = {
 			isa = PBXGroup;
 			children = (
+				DCF51123220C37C300B4FCF6 /* README.md */,
 				DCF510F22209E3F700B4FCF6 /* StarterKit */,
 				DCF510F12209E3F700B4FCF6 /* Products */,
+				DCF51126220C396200B4FCF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -205,12 +207,12 @@
 			path = PageViewController;
 			sourceTree = "<group>";
 		};
-		DCF51120220B257500B4FCF6 /* OnboardingViewController */ = {
+		DCF51126220C396200B4FCF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DCF51121220B259300B4FCF6 /* OnboardingViewController.swift */,
+				DCF51127220C396200B4FCF6 /* WhatsNewKit.framework */,
 			);
-			path = OnboardingViewController;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +225,7 @@
 				DCF510EC2209E3F700B4FCF6 /* Sources */,
 				DCF510ED2209E3F700B4FCF6 /* Frameworks */,
 				DCF510EE2209E3F700B4FCF6 /* Resources */,
+				DCF51125220C38DA00B4FCF6 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -274,6 +277,7 @@
 			files = (
 				DCF510FE2209E3F900B4FCF6 /* LaunchScreen.storyboard in Resources */,
 				6DB2D4FB220AEF4600E0B9C4 /* Localizable.strings in Resources */,
+				DCF51124220C37C300B4FCF6 /* README.md in Resources */,
 				6DB2D509220AF18C00E0B9C4 /* Licence.html in Resources */,
 				DCF5110E2209E91200B4FCF6 /* ZEISS.xcassets in Resources */,
 				6DB2D508220AF18900E0B9C4 /* Legal-Notices.html in Resources */,
@@ -285,6 +289,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DCF51125220C38DA00B4FCF6 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/WhatsNewKit.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/WhatsNewKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DCF510EC2209E3F700B4FCF6 /* Sources */ = {
@@ -299,7 +326,6 @@
 				6DB2D4F8220A042700E0B9C4 /* SizzledTheme.swift in Sources */,
 				DCF5110A2209E4D700B4FCF6 /* InformationViewController.swift in Sources */,
 				6DB2D500220AF0DB00E0B9C4 /* InformationData.swift in Sources */,
-				DCF51122220B259300B4FCF6 /* OnboardingViewController.swift in Sources */,
 				6DB2D50F220AF9C500E0B9C4 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,6 +477,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K56S2P3V34;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = StarterKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,6 +499,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K56S2P3V34;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = StarterKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

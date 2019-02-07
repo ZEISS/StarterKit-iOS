@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WhatsNewKit
 
 class HomeViewController: UIViewController {
     convenience init() {
@@ -35,26 +36,46 @@ class HomeViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        presentOnboardingScreenIfNeeded()
+        if let whatsNewViewController = setupWhatsNewViewController() {
+            self.present(whatsNewViewController, animated: true)
+        }
     }
 }
 
 extension HomeViewController {
-    func presentOnboardingScreenIfNeeded() {
-        if shouldPresentOnboardingScreen() {
-            presentOnboardingScreeen()
-        }
-    }
-    
-    func presentOnboardingScreeen() {
-        let viewController = OnboardingViewController()
-        present(viewController, animated: true, completion: nil)
-    }
-    
-    func shouldPresentOnboardingScreen() -> Bool {
-        if let version = UserDefaults.standard.string(forKey: "OnboardingCompletedForVersion"), version == OnboardingViewController.version {
-            return false
-        }
-        return true
+    func setupWhatsNewViewController() -> UIViewController? {
+        let whatsNew = WhatsNew(
+            title: "What's New in StarterKit",
+            items: [
+                WhatsNew.Item(
+                    title: "App Icon Template",
+                    subtitle: "Official App Icon Template included so you don't have to search it.",
+                    image: UIImage(named: "WhatsNewIcon")
+                ),
+                WhatsNew.Item(
+                    title: "Legal Text Templates",
+                    subtitle: "Templates for Legal texts are displayed on the Information tab.",
+                    image: UIImage(named: "WhatsNewLegal")
+                ),
+                WhatsNew.Item(
+                    title: "Brand Colors",
+                    subtitle: "All official ZEISS Brand Colors are available as Xcode Asset Catalog and properties of UIColor.zeiss.",
+                    image: UIImage(named: "WhatsNewColors")
+                ),
+                WhatsNew.Item(
+                    title: "Package Manager",
+                    subtitle: "Carthage is included as the default Package Manager for iOS Frameworks.",
+                    image: UIImage(named: "WhatsNewPackage")
+                )
+            ]
+        )
+        
+        var configuration = WhatsNewViewController.Configuration()
+        configuration.completionButton.titleFont = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.headline)
+        configuration.completionButton.backgroundColor = UIColor.zeiss.cyan
+        
+        let keyValueVersionStore = KeyValueWhatsNewVersionStore(keyValueable: UserDefaults.standard)
+        
+        return WhatsNewViewController(whatsNew: whatsNew, configuration: configuration, versionStore: keyValueVersionStore)
     }
 }
