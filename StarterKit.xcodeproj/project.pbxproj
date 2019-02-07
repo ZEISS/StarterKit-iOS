@@ -18,6 +18,7 @@
 		6DB2D50B220AF19000E0B9C4 /* Impressum.html in Resources */ = {isa = PBXBuildFile; fileRef = 6DB2D504220AF15400E0B9C4 /* Impressum.html */; };
 		6DB2D50C220AF19800E0B9C4 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 6DB2D507220AF16900E0B9C4 /* Style.css */; };
 		6DB2D50F220AF9C500E0B9C4 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB2D50E220AF9C500E0B9C4 /* PageViewController.swift */; };
+		DC6F43B1220CA62E00980E4D /* SimulatorStatusMagiciOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6F43B0220CA62E00980E4D /* SimulatorStatusMagiciOS.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		DCF510F42209E3F700B4FCF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF510F32209E3F700B4FCF6 /* AppDelegate.swift */; };
 		DCF510FB2209E3F900B4FCF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF510FA2209E3F900B4FCF6 /* Assets.xcassets */; };
 		DCF510FE2209E3F900B4FCF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCF510FC2209E3F900B4FCF6 /* LaunchScreen.storyboard */; };
@@ -25,9 +26,21 @@
 		DCF5110A2209E4D700B4FCF6 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF511092209E4D700B4FCF6 /* InformationViewController.swift */; };
 		DCF5110E2209E91200B4FCF6 /* ZEISS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF5110D2209E91200B4FCF6 /* ZEISS.xcassets */; };
 		DCF5111C220B14E400B4FCF6 /* PageViewController+WKNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF5111B220B14E400B4FCF6 /* PageViewController+WKNavigationDelegate.swift */; };
-		DCF5111E220B151600B4FCF6 /* PageViewController+UIScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF5111D220B151600B4FCF6 /* PageViewController+UIScrollViewDelegate.swift */; };
-		DCF51122220B259300B4FCF6 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF51121220B259300B4FCF6 /* OnboardingViewController.swift */; };
+		DCF51124220C37C300B4FCF6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DCF51123220C37C300B4FCF6 /* README.md */; };
+		DCF51128220C396200B4FCF6 /* WhatsNewKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF51127220C396200B4FCF6 /* WhatsNewKit.framework */; };
+		DCF51130220C5DD700B4FCF6 /* Screenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF5112F220C5DD700B4FCF6 /* Screenshots.swift */; };
+		DCF51138220C5E0800B4FCF6 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF51137220C5E0700B4FCF6 /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCF51132220C5DD700B4FCF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCF510E82209E3F700B4FCF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCF510EF2209E3F700B4FCF6;
+			remoteInfo = StarterKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6DB2D4EF2209ECA600E0B9C4 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
@@ -41,7 +54,8 @@
 		6DB2D506220AF15400E0B9C4 /* Legal-Notices.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "Legal-Notices.html"; sourceTree = "<group>"; };
 		6DB2D507220AF16900E0B9C4 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
 		6DB2D50E220AF9C500E0B9C4 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		DCF510F02209E3F700B4FCF6 /* StarterKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarterKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC6F43B0220CA62E00980E4D /* SimulatorStatusMagiciOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SimulatorStatusMagiciOS.framework; path = Carthage/Build/iOS/SimulatorStatusMagiciOS.framework; sourceTree = "<group>"; };
+		DCF510F02209E3F700B4FCF6 /* App-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF510F32209E3F700B4FCF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCF510FA2209E3F900B4FCF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCF510FD2209E3F900B4FCF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,12 +65,25 @@
 		DCF5110D2209E91200B4FCF6 /* ZEISS.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ZEISS.xcassets; sourceTree = "<group>"; };
 		DCF5111A220B132500B4FCF6 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DCF5111B220B14E400B4FCF6 /* PageViewController+WKNavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PageViewController+WKNavigationDelegate.swift"; sourceTree = "<group>"; };
-		DCF5111D220B151600B4FCF6 /* PageViewController+UIScrollViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PageViewController+UIScrollViewDelegate.swift"; sourceTree = "<group>"; };
-		DCF51121220B259300B4FCF6 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		DCF51123220C37C300B4FCF6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DCF51127220C396200B4FCF6 /* WhatsNewKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WhatsNewKit.framework; path = Carthage/Build/iOS/WhatsNewKit.framework; sourceTree = "<group>"; };
+		DCF5112D220C5DD700B4FCF6 /* Screenshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Screenshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCF5112F220C5DD700B4FCF6 /* Screenshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screenshots.swift; sourceTree = "<group>"; };
+		DCF51131220C5DD700B4FCF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCF51137220C5E0700B4FCF6 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DCF510ED2209E3F700B4FCF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6F43B1220CA62E00980E4D /* SimulatorStatusMagiciOS.framework in Frameworks */,
+				DCF51128220C396200B4FCF6 /* WhatsNewKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCF5112A220C5DD700B4FCF6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +149,6 @@
 		6DB2D50D220AF9B000E0B9C4 /* Generic */ = {
 			isa = PBXGroup;
 			children = (
-				DCF51120220B257500B4FCF6 /* OnboardingViewController */,
 				DCF5111F220B24EA00B4FCF6 /* PageViewController */,
 			);
 			path = Generic;
@@ -131,31 +157,35 @@
 		DCF510E72209E3F700B4FCF6 = {
 			isa = PBXGroup;
 			children = (
-				DCF510F22209E3F700B4FCF6 /* StarterKit */,
+				DCF51123220C37C300B4FCF6 /* README.md */,
+				DCF510F22209E3F700B4FCF6 /* App-iOS */,
+				DCF5112E220C5DD700B4FCF6 /* Screenshots */,
 				DCF510F12209E3F700B4FCF6 /* Products */,
+				DCF51126220C396200B4FCF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		DCF510F12209E3F700B4FCF6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DCF510F02209E3F700B4FCF6 /* StarterKit.app */,
+				DCF510F02209E3F700B4FCF6 /* App-iOS.app */,
+				DCF5112D220C5DD700B4FCF6 /* Screenshots.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DCF510F22209E3F700B4FCF6 /* StarterKit */ = {
+		DCF510F22209E3F700B4FCF6 /* App-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				6DB2D501220AF13C00E0B9C4 /* Static Pages */,
 				DCF510F32209E3F700B4FCF6 /* AppDelegate.swift */,
 				DCF511052209E4A400B4FCF6 /* ViewControllers */,
 				6DB2D4FE220AF0C300E0B9C4 /* Models */,
 				6DB2D4EE2209EC5F00E0B9C4 /* Extensions */,
 				6DB2D4F1220A039F00E0B9C4 /* Vendors */,
+				6DB2D501220AF13C00E0B9C4 /* Static Pages */,
 				DCF511062209E4B000B4FCF6 /* Supporting Files */,
 			);
-			path = StarterKit;
+			path = "App-iOS";
 			sourceTree = "<group>";
 		};
 		DCF511052209E4A400B4FCF6 /* ViewControllers */ = {
@@ -172,10 +202,10 @@
 			isa = PBXGroup;
 			children = (
 				DCF510FA2209E3F900B4FCF6 /* Assets.xcassets */,
-				DCF510FC2209E3F900B4FCF6 /* LaunchScreen.storyboard */,
-				DCF510FF2209E3F900B4FCF6 /* Info.plist */,
 				DCF5110D2209E91200B4FCF6 /* ZEISS.xcassets */,
+				DCF510FC2209E3F900B4FCF6 /* LaunchScreen.storyboard */,
 				6DB2D4FD220AEF4600E0B9C4 /* Localizable.strings */,
+				DCF510FF2209E3F900B4FCF6 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -205,33 +235,64 @@
 			path = PageViewController;
 			sourceTree = "<group>";
 		};
-		DCF51120220B257500B4FCF6 /* OnboardingViewController */ = {
+		DCF51126220C396200B4FCF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DCF51121220B259300B4FCF6 /* OnboardingViewController.swift */,
+				DC6F43B0220CA62E00980E4D /* SimulatorStatusMagiciOS.framework */,
+				DCF51127220C396200B4FCF6 /* WhatsNewKit.framework */,
 			);
-			path = OnboardingViewController;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCF5112E220C5DD700B4FCF6 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				DCF5112F220C5DD700B4FCF6 /* Screenshots.swift */,
+				DCF51137220C5E0700B4FCF6 /* SnapshotHelper.swift */,
+				DCF51131220C5DD700B4FCF6 /* Info.plist */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DCF510EF2209E3F700B4FCF6 /* StarterKit */ = {
+		DCF510EF2209E3F700B4FCF6 /* App-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DCF511022209E3F900B4FCF6 /* Build configuration list for PBXNativeTarget "StarterKit" */;
+			buildConfigurationList = DCF511022209E3F900B4FCF6 /* Build configuration list for PBXNativeTarget "App-iOS" */;
 			buildPhases = (
 				DCF510EC2209E3F700B4FCF6 /* Sources */,
 				DCF510ED2209E3F700B4FCF6 /* Frameworks */,
 				DCF510EE2209E3F700B4FCF6 /* Resources */,
+				DC6F43B2220CA66E00980E4D /* Embed SimulatorMagic */,
+				DCF51125220C38DA00B4FCF6 /* Carthage */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = StarterKit;
+			name = "App-iOS";
 			productName = StarterKit;
-			productReference = DCF510F02209E3F700B4FCF6 /* StarterKit.app */;
+			productReference = DCF510F02209E3F700B4FCF6 /* App-iOS.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DCF5112C220C5DD700B4FCF6 /* Screenshots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCF51134220C5DD700B4FCF6 /* Build configuration list for PBXNativeTarget "Screenshots" */;
+			buildPhases = (
+				DCF51129220C5DD700B4FCF6 /* Sources */,
+				DCF5112A220C5DD700B4FCF6 /* Frameworks */,
+				DCF5112B220C5DD700B4FCF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCF51133220C5DD700B4FCF6 /* PBXTargetDependency */,
+			);
+			name = Screenshots;
+			productName = StarterKitUITests;
+			productReference = DCF5112D220C5DD700B4FCF6 /* Screenshots.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -245,6 +306,10 @@
 				TargetAttributes = {
 					DCF510EF2209E3F700B4FCF6 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					DCF5112C220C5DD700B4FCF6 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = DCF510EF2209E3F700B4FCF6;
 					};
 				};
 			};
@@ -262,7 +327,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DCF510EF2209E3F700B4FCF6 /* StarterKit */,
+				DCF510EF2209E3F700B4FCF6 /* App-iOS */,
+				DCF5112C220C5DD700B4FCF6 /* Screenshots */,
 			);
 		};
 /* End PBXProject section */
@@ -274,6 +340,7 @@
 			files = (
 				DCF510FE2209E3F900B4FCF6 /* LaunchScreen.storyboard in Resources */,
 				6DB2D4FB220AEF4600E0B9C4 /* Localizable.strings in Resources */,
+				DCF51124220C37C300B4FCF6 /* README.md in Resources */,
 				6DB2D509220AF18C00E0B9C4 /* Licence.html in Resources */,
 				DCF5110E2209E91200B4FCF6 /* ZEISS.xcassets in Resources */,
 				6DB2D508220AF18900E0B9C4 /* Legal-Notices.html in Resources */,
@@ -284,7 +351,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCF5112B220C5DD700B4FCF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DC6F43B2220CA66E00980E4D /* Embed SimulatorMagic */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SimulatorStatusMagiciOS.framework",
+			);
+			name = "Embed SimulatorMagic";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SimulatorStatusMagiciOS.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script embeds (and codesigns) a framework within an iOS app binary, but only when the configuration is Debug.\n# It must be called from, or copied into an Xcode Run Script build phase with following setup:\n# Input Files:\n#     - Path to framework within project folder (source path)\n#     - For example: $(SRCROOT)/ThirdPartyFrameworks/SimulatorStatusMagiciOS.framework\n# Output Files:\n#     - Desired path to framework within ${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH} (destination path)\n#     - For example: ${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimulatorStatusMagiciOS.framework\n#\n# For explanation of Input & Output Files, check out: https://indiestack.com/2014/12/speeding-up-custom-script-phases/\n# This script adapted from: https://stackoverflow.com/a/40484337/9051514 (thanks Ricardo Duarte!)\n\nif [[ -z ${SCRIPT_INPUT_FILE_0} || -z ${SCRIPT_OUTPUT_FILE_0} ]]; then\necho \"This Xcode Run Script build phase must be configured with Input & Output Files\"\nexit 1\nfi\n\necho \"Embed ${SCRIPT_INPUT_FILE_0}\"\nif [[ $CONFIGURATION == 'Debug' ]]; then\nFRAMEWORK_SOURCE=${SCRIPT_INPUT_FILE_0}\nFRAMEWORK_DESTINATION=${SCRIPT_OUTPUT_FILE_0}\nDESTINATION_FOLDER=`dirname ${FRAMEWORK_DESTINATION}`\n\nmkdir -p ${DESTINATION_FOLDER}\ncp -Rv ${FRAMEWORK_SOURCE} ${FRAMEWORK_DESTINATION}\n\nCODE_SIGN_IDENTITY_FOR_ITEMS=\"${EXPANDED_CODE_SIGN_IDENTITY_NAME}\"\nif [ \"${CODE_SIGN_IDENTITY_FOR_ITEMS}\" = \"\" ] ; then\nCODE_SIGN_IDENTITY_FOR_ITEMS=\"${CODE_SIGN_IDENTITY}\"\nfi\n\nBINARY_NAME=`basename ${FRAMEWORK_DESTINATION} .framework`\ncodesign --force --verbose --sign \"${CODE_SIGN_IDENTITY_FOR_ITEMS}\" ${FRAMEWORK_DESTINATION}/${BINARY_NAME}\necho \" ✅ Embedded successfully\"\nelse\necho \" ❌ Non Debug build detected - do not embed\"\nfi\n";
+		};
+		DCF51125220C38DA00B4FCF6 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/WhatsNewKit.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/WhatsNewKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DCF510EC2209E3F700B4FCF6 /* Sources */ = {
@@ -299,12 +416,28 @@
 				6DB2D4F8220A042700E0B9C4 /* SizzledTheme.swift in Sources */,
 				DCF5110A2209E4D700B4FCF6 /* InformationViewController.swift in Sources */,
 				6DB2D500220AF0DB00E0B9C4 /* InformationData.swift in Sources */,
-				DCF51122220B259300B4FCF6 /* OnboardingViewController.swift in Sources */,
 				6DB2D50F220AF9C500E0B9C4 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCF51129220C5DD700B4FCF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCF51130220C5DD700B4FCF6 /* Screenshots.swift in Sources */,
+				DCF51138220C5E0800B4FCF6 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCF51133220C5DD700B4FCF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCF510EF2209E3F700B4FCF6 /* App-iOS */;
+			targetProxy = DCF51132220C5DD700B4FCF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6DB2D4FD220AEF4600E0B9C4 /* Localizable.strings */ = {
@@ -379,7 +512,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -435,7 +568,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -451,7 +584,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K56S2P3V34;
-				INFOPLIST_FILE = StarterKit/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "App-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,7 +606,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K56S2P3V34;
-				INFOPLIST_FILE = StarterKit/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "App-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,6 +619,46 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DCF51135220C5DD700B4FCF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K56S2P3V34;
+				INFOPLIST_FILE = Screenshots/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zeiss.StarterKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "App-iOS";
+			};
+			name = Debug;
+		};
+		DCF51136220C5DD700B4FCF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K56S2P3V34;
+				INFOPLIST_FILE = Screenshots/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zeiss.StarterKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "App-iOS";
 			};
 			name = Release;
 		};
@@ -493,11 +674,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DCF511022209E3F900B4FCF6 /* Build configuration list for PBXNativeTarget "StarterKit" */ = {
+		DCF511022209E3F900B4FCF6 /* Build configuration list for PBXNativeTarget "App-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DCF511032209E3F900B4FCF6 /* Debug */,
 				DCF511042209E3F900B4FCF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCF51134220C5DD700B4FCF6 /* Build configuration list for PBXNativeTarget "Screenshots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCF51135220C5DD700B4FCF6 /* Debug */,
+				DCF51136220C5DD700B4FCF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
