@@ -1,5 +1,6 @@
-# Created by https://www.gitignore.io/api/xcode,swift,macos,carthage,cocoapods
-# Edit at https://www.gitignore.io/?templates=xcode,swift,macos,carthage,cocoapods
+
+# Created by https://www.gitignore.io/api/xcode,swift,macos,carthage,cocoapods,fastlane
+# Edit at https://www.gitignore.io/?templates=xcode,swift,macos,carthage,cocoapods,fastlane
 
 ### Carthage ###
 # Carthage
@@ -16,6 +17,27 @@ Carthage/Build
 #           - Also handy if you have a large number of dependant pods
 #           - AS PER https://guides.cocoapods.org/using/using-cocoapods.html NEVER IGNORE THE LOCK FILE
 Pods/
+
+### fastlane ###
+# fastlane - A streamlined workflow tool for Cocoa deployment
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+# fastlane specific
+fastlane/report.xml
+
+# deliver temporary files
+fastlane/Preview.html
+
+# snapshot generated screenshots
+fastlane/screenshots/**/*.png
+fastlane/screenshots/screenshots.html
+
+# scan temporary files
+fastlane/test_output
 
 ### macOS ###
 # General
@@ -112,10 +134,6 @@ playground.xcworkspace
 # For more information about the recommended setup visit:
 # https://docs.fastlane.tools/best-practices/source-control/#source-control
 
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots/**/*.png
-fastlane/test_output
 
 # Code Injection
 #
@@ -143,4 +161,4 @@ iOSInjectionProject/
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
-# End of https://www.gitignore.io/api/xcode,swift,macos,carthage,cocoapods
+# End of https://www.gitignore.io/api/xcode,swift,macos,carthage,cocoapods,fastlane
