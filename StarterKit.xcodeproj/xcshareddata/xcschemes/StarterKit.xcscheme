@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DCF5112C220C5DD700B4FCF6"
-               BuildableName = "StarterKitUITests.xctest"
-               BlueprintName = "StarterKitUITests"
+               BuildableName = "Screenshots.xctest"
+               BlueprintName = "Screenshots"
                ReferencedContainer = "container:StarterKit.xcodeproj">
             </BuildableReference>
          </TestableReference>

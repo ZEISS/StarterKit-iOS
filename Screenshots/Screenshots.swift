@@ -1,6 +1,6 @@
 //
-//  StarterKitUITests.swift
-//  StarterKitUITests
+//  Screenshots.swift
+//  Screenshots
 //
 //  Created by Devran Uenal on 07.02.19.
 //  Copyright © 2019 Carl Zeiss AG. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class StarterKitUITests: XCTestCase {
+class Screenshots: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -27,7 +27,7 @@
 		DCF5111C220B14E400B4FCF6 /* PageViewController+WKNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF5111B220B14E400B4FCF6 /* PageViewController+WKNavigationDelegate.swift */; };
 		DCF51124220C37C300B4FCF6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DCF51123220C37C300B4FCF6 /* README.md */; };
 		DCF51128220C396200B4FCF6 /* WhatsNewKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF51127220C396200B4FCF6 /* WhatsNewKit.framework */; };
-		DCF51130220C5DD700B4FCF6 /* StarterKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF5112F220C5DD700B4FCF6 /* StarterKitUITests.swift */; };
+		DCF51130220C5DD700B4FCF6 /* Screenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF5112F220C5DD700B4FCF6 /* Screenshots.swift */; };
 		DCF51138220C5E0800B4FCF6 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF51137220C5E0700B4FCF6 /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,8 +65,8 @@
 		DCF5111B220B14E400B4FCF6 /* PageViewController+WKNavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PageViewController+WKNavigationDelegate.swift"; sourceTree = "<group>"; };
 		DCF51123220C37C300B4FCF6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DCF51127220C396200B4FCF6 /* WhatsNewKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WhatsNewKit.framework; path = Carthage/Build/iOS/WhatsNewKit.framework; sourceTree = "<group>"; };
-		DCF5112D220C5DD700B4FCF6 /* StarterKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarterKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCF5112F220C5DD700B4FCF6 /* StarterKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterKitUITests.swift; sourceTree = "<group>"; };
+		DCF5112D220C5DD700B4FCF6 /* Screenshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Screenshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCF5112F220C5DD700B4FCF6 /* Screenshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screenshots.swift; sourceTree = "<group>"; };
 		DCF51131220C5DD700B4FCF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCF51137220C5E0700B4FCF6 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,7 +156,7 @@
 			children = (
 				DCF51123220C37C300B4FCF6 /* README.md */,
 				DCF510F22209E3F700B4FCF6 /* StarterKit */,
-				DCF5112E220C5DD700B4FCF6 /* StarterKitUITests */,
+				DCF5112E220C5DD700B4FCF6 /* Screenshots */,
 				DCF510F12209E3F700B4FCF6 /* Products */,
 				DCF51126220C396200B4FCF6 /* Frameworks */,
 			);
@@ -166,7 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				DCF510F02209E3F700B4FCF6 /* StarterKit.app */,
-				DCF5112D220C5DD700B4FCF6 /* StarterKitUITests.xctest */,
+				DCF5112D220C5DD700B4FCF6 /* Screenshots.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -240,14 +240,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DCF5112E220C5DD700B4FCF6 /* StarterKitUITests */ = {
+		DCF5112E220C5DD700B4FCF6 /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
-				DCF5112F220C5DD700B4FCF6 /* StarterKitUITests.swift */,
+				DCF5112F220C5DD700B4FCF6 /* Screenshots.swift */,
 				DCF51137220C5E0700B4FCF6 /* SnapshotHelper.swift */,
 				DCF51131220C5DD700B4FCF6 /* Info.plist */,
 			);
-			path = StarterKitUITests;
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,9 +271,9 @@
 			productReference = DCF510F02209E3F700B4FCF6 /* StarterKit.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DCF5112C220C5DD700B4FCF6 /* StarterKitUITests */ = {
+		DCF5112C220C5DD700B4FCF6 /* Screenshots */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DCF51134220C5DD700B4FCF6 /* Build configuration list for PBXNativeTarget "StarterKitUITests" */;
+			buildConfigurationList = DCF51134220C5DD700B4FCF6 /* Build configuration list for PBXNativeTarget "Screenshots" */;
 			buildPhases = (
 				DCF51129220C5DD700B4FCF6 /* Sources */,
 				DCF5112A220C5DD700B4FCF6 /* Frameworks */,
@@ -284,9 +284,9 @@
 			dependencies = (
 				DCF51133220C5DD700B4FCF6 /* PBXTargetDependency */,
 			);
-			name = StarterKitUITests;
+			name = Screenshots;
 			productName = StarterKitUITests;
-			productReference = DCF5112D220C5DD700B4FCF6 /* StarterKitUITests.xctest */;
+			productReference = DCF5112D220C5DD700B4FCF6 /* Screenshots.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -323,7 +323,7 @@
 			projectRoot = "";
 			targets = (
 				DCF510EF2209E3F700B4FCF6 /* StarterKit */,
-				DCF5112C220C5DD700B4FCF6 /* StarterKitUITests */,
+				DCF5112C220C5DD700B4FCF6 /* Screenshots */,
 			);
 		};
 /* End PBXProject section */
@@ -399,7 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCF51130220C5DD700B4FCF6 /* StarterKitUITests.swift in Sources */,
+				DCF51130220C5DD700B4FCF6 /* Screenshots.swift in Sources */,
 				DCF51138220C5E0800B4FCF6 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,7 +602,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K56S2P3V34;
-				INFOPLIST_FILE = StarterKitUITests/Info.plist;
+				INFOPLIST_FILE = Screenshots/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -621,7 +621,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K56S2P3V34;
-				INFOPLIST_FILE = StarterKitUITests/Info.plist;
+				INFOPLIST_FILE = Screenshots/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -656,7 +656,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DCF51134220C5DD700B4FCF6 /* Build configuration list for PBXNativeTarget "StarterKitUITests" */ = {
+		DCF51134220C5DD700B4FCF6 /* Build configuration list for PBXNativeTarget "Screenshots" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DCF51135220C5DD700B4FCF6 /* Debug */,
