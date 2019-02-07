@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DCF510EF2209E3F700B4FCF6"
-               BuildableName = "StarterKit.app"
-               BlueprintName = "StarterKit"
+               BuildableName = "App-iOS.app"
+               BlueprintName = "App-iOS"
                ReferencedContainer = "container:StarterKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,8 +43,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DCF510EF2209E3F700B4FCF6"
-            BuildableName = "StarterKit.app"
-            BlueprintName = "StarterKit"
+            BuildableName = "App-iOS.app"
+            BlueprintName = "App-iOS"
             ReferencedContainer = "container:StarterKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -66,8 +66,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DCF510EF2209E3F700B4FCF6"
-            BuildableName = "StarterKit.app"
-            BlueprintName = "StarterKit"
+            BuildableName = "App-iOS.app"
+            BlueprintName = "App-iOS"
             ReferencedContainer = "container:StarterKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -85,8 +85,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DCF510EF2209E3F700B4FCF6"
-            BuildableName = "StarterKit.app"
-            BlueprintName = "StarterKit"
+            BuildableName = "App-iOS.app"
+            BlueprintName = "App-iOS"
             ReferencedContainer = "container:StarterKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

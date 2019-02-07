@@ -53,7 +53,7 @@
 		6DB2D506220AF15400E0B9C4 /* Legal-Notices.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "Legal-Notices.html"; sourceTree = "<group>"; };
 		6DB2D507220AF16900E0B9C4 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
 		6DB2D50E220AF9C500E0B9C4 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		DCF510F02209E3F700B4FCF6 /* StarterKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarterKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCF510F02209E3F700B4FCF6 /* App-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF510F32209E3F700B4FCF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCF510FA2209E3F900B4FCF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCF510FD2209E3F900B4FCF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				DCF51123220C37C300B4FCF6 /* README.md */,
-				DCF510F22209E3F700B4FCF6 /* StarterKit */,
+				DCF510F22209E3F700B4FCF6 /* App-iOS */,
 				DCF5112E220C5DD700B4FCF6 /* Screenshots */,
 				DCF510F12209E3F700B4FCF6 /* Products */,
 				DCF51126220C396200B4FCF6 /* Frameworks */,
@@ -165,13 +165,13 @@
 		DCF510F12209E3F700B4FCF6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DCF510F02209E3F700B4FCF6 /* StarterKit.app */,
+				DCF510F02209E3F700B4FCF6 /* App-iOS.app */,
 				DCF5112D220C5DD700B4FCF6 /* Screenshots.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DCF510F22209E3F700B4FCF6 /* StarterKit */ = {
+		DCF510F22209E3F700B4FCF6 /* App-iOS */ = {
 			isa = PBXGroup;
 			children = (
 				DCF510F32209E3F700B4FCF6 /* AppDelegate.swift */,
@@ -182,7 +182,7 @@
 				6DB2D501220AF13C00E0B9C4 /* Static Pages */,
 				DCF511062209E4B000B4FCF6 /* Supporting Files */,
 			);
-			path = StarterKit;
+			path = "App-iOS";
 			sourceTree = "<group>";
 		};
 		DCF511052209E4A400B4FCF6 /* ViewControllers */ = {
@@ -253,9 +253,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DCF510EF2209E3F700B4FCF6 /* StarterKit */ = {
+		DCF510EF2209E3F700B4FCF6 /* App-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DCF511022209E3F900B4FCF6 /* Build configuration list for PBXNativeTarget "StarterKit" */;
+			buildConfigurationList = DCF511022209E3F900B4FCF6 /* Build configuration list for PBXNativeTarget "App-iOS" */;
 			buildPhases = (
 				DCF510EC2209E3F700B4FCF6 /* Sources */,
 				DCF510ED2209E3F700B4FCF6 /* Frameworks */,
@@ -266,9 +266,9 @@
 			);
 			dependencies = (
 			);
-			name = StarterKit;
+			name = "App-iOS";
 			productName = StarterKit;
-			productReference = DCF510F02209E3F700B4FCF6 /* StarterKit.app */;
+			productReference = DCF510F02209E3F700B4FCF6 /* App-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DCF5112C220C5DD700B4FCF6 /* Screenshots */ = {
@@ -322,7 +322,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DCF510EF2209E3F700B4FCF6 /* StarterKit */,
+				DCF510EF2209E3F700B4FCF6 /* App-iOS */,
 				DCF5112C220C5DD700B4FCF6 /* Screenshots */,
 			);
 		};
@@ -409,7 +409,7 @@
 /* Begin PBXTargetDependency section */
 		DCF51133220C5DD700B4FCF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DCF510EF2209E3F700B4FCF6 /* StarterKit */;
+			target = DCF510EF2209E3F700B4FCF6 /* App-iOS */;
 			targetProxy = DCF51132220C5DD700B4FCF6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -563,7 +563,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = StarterKit/Info.plist;
+				INFOPLIST_FILE = "App-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -585,7 +585,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = StarterKit/Info.plist;
+				INFOPLIST_FILE = "App-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -647,7 +647,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DCF511022209E3F900B4FCF6 /* Build configuration list for PBXNativeTarget "StarterKit" */ = {
+		DCF511022209E3F900B4FCF6 /* Build configuration list for PBXNativeTarget "App-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DCF511032209E3F900B4FCF6 /* Debug */,
