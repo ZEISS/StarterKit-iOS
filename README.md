@@ -4,16 +4,22 @@
 
 # Information
 
-
-
-# Usage
-
-Clone StarterKit repository
+# Download
 
 ```bash
 git clone https://...
 cd StarterKit-iOS
 git remote remove origin
+```
+
+# Usage
+
+## Create screenshots automatically (fastlane)
+
+
+
+```bash
+fastlane ios screenshots
 ```
 
 # Installation
