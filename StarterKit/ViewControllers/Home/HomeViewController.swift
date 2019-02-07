@@ -73,7 +73,7 @@ extension HomeViewController {
         
         var configuration = WhatsNewViewController.Configuration()
         configuration.completionButton.titleFont = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.headline)
-        configuration.completionButton.backgroundColor = UIColor.zeiss.cyan
+        configuration.completionButton.backgroundColor = UIColor.Zeiss.cyan
         
         let keyValueVersionStore = KeyValueWhatsNewVersionStore(keyValueable: UserDefaults.standard)
         

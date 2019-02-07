@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIColor {
-    struct zeiss {
+    struct Zeiss {
         static let black = UIColor(named: "ZeissBlack")!
         static let white = UIColor(named: "ZeissWhite")!
         static let cyan = UIColor(named: "ZeissCyan")!
