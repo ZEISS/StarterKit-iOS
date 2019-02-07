@@ -2,7 +2,15 @@
 
 # Intro
 
-# Information
+A starter project with great defaults for iOS app development.
+
+## Contents
+
+* Carthage (https://github.com/Carthage/Carthage)
+* Fastlane (https://fastlane.tools)
+* SimulatorStatusMagic (https://github.com/shinydevelopment/SimulatorStatusMagic)
+* WhatsNewKit (https://github.com/SvenTiigi/WhatsNewKit)
+* ZEISS Brand Colors (https://brand.zeiss.com)
 
 # Download
 
