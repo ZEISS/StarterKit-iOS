@@ -14,9 +14,11 @@ git remote remove origin
 
 # Usage
 
+## First use
+
+* Set bundle identifier
+
 ## Create screenshots automatically (fastlane)
-
-
 
 ```bash
 fastlane ios screenshots
