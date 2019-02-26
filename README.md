@@ -31,6 +31,10 @@ git remote remove origin
 carthage update --platform iOS
 ```
 
+## Icon
+
+* Use the `App-Icon Template.sketch` template to create the icon
+* Create the asset catalog file with e.g. [Asset Catalog Creator](https://itunes.apple.com/de/app/asset-catalog-creator/id866571115)
 
 ## Before deployment
 
