@@ -15,7 +15,7 @@ A starter project with great defaults for iOS app development.
 # Download
 
 ```bash
-git clone https://...
+git clone https://github.com/ZEISS/StarterKit-iOS.git
 cd StarterKit-iOS
 git remote remove origin
 ```
