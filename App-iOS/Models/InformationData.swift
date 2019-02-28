@@ -10,7 +10,7 @@ import Foundation
 
 struct InformationData {
     static var legalInformation: [InformationData] = [
-        InformationData(name: NSLocalizedString("Licence", comment: ""), url: Bundle.main.url(forResource: "Licence", withExtension: "html")!),
+        InformationData(name: NSLocalizedString("License", comment: ""), url: Bundle.main.url(forResource: "License", withExtension: "html")!),
         InformationData(name: NSLocalizedString("Data Protection", comment: ""), url: Bundle.main.url(forResource: "Data-Protection", withExtension: "html")!),
         InformationData(name: NSLocalizedString("Impressum", comment: ""), url: Bundle.main.url(forResource: "Impressum", withExtension: "html")!)
     ]

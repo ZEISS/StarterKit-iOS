@@ -13,7 +13,7 @@
 		6DB2D4FB220AEF4600E0B9C4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DB2D4FD220AEF4600E0B9C4 /* Localizable.strings */; };
 		6DB2D500220AF0DB00E0B9C4 /* InformationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB2D4FF220AF0DB00E0B9C4 /* InformationData.swift */; };
 		6DB2D508220AF18900E0B9C4 /* Legal-Notices.html in Resources */ = {isa = PBXBuildFile; fileRef = 6DB2D506220AF15400E0B9C4 /* Legal-Notices.html */; };
-		6DB2D509220AF18C00E0B9C4 /* Licence.html in Resources */ = {isa = PBXBuildFile; fileRef = 6DB2D505220AF15400E0B9C4 /* Licence.html */; };
+		6DB2D509220AF18C00E0B9C4 /* License.html in Resources */ = {isa = PBXBuildFile; fileRef = 6DB2D505220AF15400E0B9C4 /* License.html */; };
 		6DB2D50A220AF18E00E0B9C4 /* Data-Protection.html in Resources */ = {isa = PBXBuildFile; fileRef = 6DB2D503220AF15400E0B9C4 /* Data-Protection.html */; };
 		6DB2D50B220AF19000E0B9C4 /* Impressum.html in Resources */ = {isa = PBXBuildFile; fileRef = 6DB2D504220AF15400E0B9C4 /* Impressum.html */; };
 		6DB2D50C220AF19800E0B9C4 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 6DB2D507220AF16900E0B9C4 /* Style.css */; };
@@ -50,7 +50,7 @@
 		6DB2D4FF220AF0DB00E0B9C4 /* InformationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationData.swift; sourceTree = "<group>"; };
 		6DB2D503220AF15400E0B9C4 /* Data-Protection.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "Data-Protection.html"; sourceTree = "<group>"; };
 		6DB2D504220AF15400E0B9C4 /* Impressum.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Impressum.html; sourceTree = "<group>"; };
-		6DB2D505220AF15400E0B9C4 /* Licence.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Licence.html; sourceTree = "<group>"; };
+		6DB2D505220AF15400E0B9C4 /* License.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = License.html; sourceTree = "<group>"; };
 		6DB2D506220AF15400E0B9C4 /* Legal-Notices.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "Legal-Notices.html"; sourceTree = "<group>"; };
 		6DB2D507220AF16900E0B9C4 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
 		6DB2D50E220AF9C500E0B9C4 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 				6DB2D503220AF15400E0B9C4 /* Data-Protection.html */,
 				6DB2D504220AF15400E0B9C4 /* Impressum.html */,
 				6DB2D506220AF15400E0B9C4 /* Legal-Notices.html */,
-				6DB2D505220AF15400E0B9C4 /* Licence.html */,
+				6DB2D505220AF15400E0B9C4 /* License.html */,
 			);
 			path = Information;
 			sourceTree = "<group>";
@@ -341,7 +341,7 @@
 				DCF510FE2209E3F900B4FCF6 /* LaunchScreen.storyboard in Resources */,
 				6DB2D4FB220AEF4600E0B9C4 /* Localizable.strings in Resources */,
 				DCF51124220C37C300B4FCF6 /* README.md in Resources */,
-				6DB2D509220AF18C00E0B9C4 /* Licence.html in Resources */,
+				6DB2D509220AF18C00E0B9C4 /* License.html in Resources */,
 				DCF5110E2209E91200B4FCF6 /* ZEISS.xcassets in Resources */,
 				6DB2D508220AF18900E0B9C4 /* Legal-Notices.html in Resources */,
 				DCF510FB2209E3F900B4FCF6 /* Assets.xcassets in Resources */,
