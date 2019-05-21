@@ -68,6 +68,13 @@ public extension WhatsNewViewController {
             self.apply(theme: theme)
         }
         
+        /// Convenience Initializer with Theme
+        ///
+        /// - Parameter theme: The Theme
+        public init(_ theme: Theme) {
+            self.init(theme: theme)
+        }
+        
     }
     
 }
@@ -148,7 +155,7 @@ public extension WhatsNewViewController.Configuration {
 public extension WhatsNewViewController {
     
     /// The Customization typealias for an inout Configuration closure
-    public typealias Customization = (inout Configuration) -> Void
+    typealias Customization = (inout Configuration) -> Void
     
     /// The Theme
     struct Theme {

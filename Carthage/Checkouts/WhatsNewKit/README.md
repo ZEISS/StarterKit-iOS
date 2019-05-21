@@ -4,7 +4,7 @@
 
 <p align="center">
    <a href="https://developer.apple.com/swift/">
-      <img src="https://img.shields.io/badge/Swift-4.2-orange.svg?style=flat" alt="Swift 4.2">
+      <img src="https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat" alt="Swift 5.0">
    </a>
    <a href="https://travis-ci.com/SvenTiigi/WhatsNewKit">
       <img src="https://travis-ci.com/SvenTiigi/WhatsNewKit.svg?branch=master" alt="Build Status">
@@ -39,7 +39,7 @@
 <br/>
 
 <p align="center">
-   <img width="600" src="https://raw.githubusercontent.com/SvenTiigi/WhatsNewKit/gh-pages/readMeAssets/WhatsNewKit.gif" alt="Example">
+   <img width="600" src="https://raw.githubusercontent.com/SvenTiigi/WhatsNewKit/gh-pages/readMeAssets/WhatsNewKit.gif" alt="Demo">
 </p>
 
 ## Features
@@ -52,6 +52,10 @@
 ## Example
 
 The example Application is an excellent way to see `WhatsNewKit` in action. You get a brief look of the available configuration options and how they affect the look and feel of the `WhatsNewViewController`. Simply open the `WhatsNewKit.xcodeproj` and run the `WhatsNewKit-Example` scheme.
+
+<p align="center">
+<img width="80%" src="https://raw.githubusercontent.com/SvenTiigi/WhatsNewKit/gh-pages/readMeAssets/ExampleApp.png" alt="Example App">
+</p>
 
 ## Installation
 
@@ -88,6 +92,8 @@ The following first usage description shows the easiest way of presenting your n
 > 👨‍💻 Please see the [Advanced](https://github.com/SvenTiigi/WhatsNewKit#advanced) section for further configuration options and features.
 
 ```swift
+import WhatsNewKit
+
 // Initialize WhatsNew
 let whatsNew = WhatsNew(
     // The Title
@@ -97,12 +103,12 @@ let whatsNew = WhatsNew(
         WhatsNew.Item(
             title: "Installation",
             subtitle: "You can install WhatsNewKit via CocoaPods or Carthage",
-            image: .init(named: "installation")
+            image: UIImage(named: "installation")
         ),
         WhatsNew.Item(
             title: "Open Source",
             subtitle: "Contributions are very welcome 👨‍💻",
-            image: .init(named: "openSource")
+            image: UIImage(named: "openSource")
         )
     ]
 )
@@ -120,7 +126,7 @@ self.present(whatsNewViewController, animated: true)
 As mentioned before `WhatsNewKit` can be fully customized to your needs. The Advanced section will explain all configuration possibilities and features of `WhatsNewKit` in detail. First off it's important to understand the components of the `WhatsNewViewController` in order to customize the behaviour and `UI`-Design.
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/SvenTiigi/WhatsNewKit/gh-pages/readMeAssets/UILayout.gif">
+<img src="https://raw.githubusercontent.com/SvenTiigi/WhatsNewKit/gh-pages/readMeAssets/UILayout.gif" alt="UILayout">
 </p>
 
 ### WhatsNewViewController.Configuration
@@ -145,12 +151,12 @@ let whatsNewViewController = WhatsNewViewController(
 )
 ```
 
-### Theme
+### Theme 🌄
 A [Theme](https://github.com/SvenTiigi/WhatsNewKit/blob/master/Sources/Configuration/WhatsNewViewController%2BConfiguration.swift) allows you to group the customization of a `WhatsNewViewController.Configuration`. `WhatsNewKit` implemented predefined Themes which are available as static properties both in white and dark mode. Or you create your very own Theme to configure it to your needs.
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/SvenTiigi/WhatsNewKit/gh-pages/readMeAssets/Templates.jpg" width="600">
-</p>
+| `.darkRed` | `.whiteRed`   |
+| ------------- | ------------- |
+| <p align="center"> <img src="https://raw.githubusercontent.com/SvenTiigi/WhatsNewKit/gh-pages/readMeAssets/Theme_darkRed.jpg" width="70%" alt="Theme Dark Red"/> </p> | <p align="center"> <img src="https://raw.githubusercontent.com/SvenTiigi/WhatsNewKit/gh-pages/readMeAssets/Theme_whiteRed.jpg" width="70%" alt="Theme White Red" /> </p>|
 
 ```swift
 // Configuration with predefined Dark Red Theme
@@ -179,13 +185,13 @@ let configuration = WhatsNewViewController.Configuration(
 
 For a full overview of the available predefined Themes check out the [Example-Application](https://github.com/SvenTiigi/WhatsNewKit/tree/master/Example).
 
-### Layout
+### Layout 📐
 
 `WhatsNewKit` comes with two predefined [`ItemsView.Layouts`](https://github.com/SvenTiigi/WhatsNewKit/blob/master/Sources/Configuration/WhatsNewViewController%2BItemsView.swift). 
 
 | Default | Centered   |
 | ------------- | ------------- |
-| <img src="https://raw.githubusercontent.com/SvenTiigi/WhatsNewKit/gh-pages/readMeAssets/LayoutDefault.png" /> | <img src="https://raw.githubusercontent.com/SvenTiigi/WhatsNewKit/gh-pages/readMeAssets/LayoutCentered.png" /> |
+| <img src="https://raw.githubusercontent.com/SvenTiigi/WhatsNewKit/gh-pages/readMeAssets/LayoutDefault.png" alt="Default Layout" /> | <img src="https://raw.githubusercontent.com/SvenTiigi/WhatsNewKit/gh-pages/readMeAssets/LayoutCentered.png" alt="Centered Layout" /> |
 | The `default` layout shows an image on the left side and the text on the right side. | The `centered` layout aligns the image as well as the text in center. |
 
 ```swift
@@ -195,7 +201,27 @@ configuration.itemsView.layout = .default
 // Centered Layout
 configuration.itemsView.layout = .centered
 ```
-> ☝️ By default the ItemsView layout is set to `default`.
+> ☝️ In default the ItemsView layout is set to `default`.
+
+### ContentMode 📏
+
+Setting the [`ContentMode`](https://github.com/SvenTiigi/WhatsNewKit/blob/master/Sources/Configuration/WhatsNewViewController%2BItemsView.swift) in the `ItemsView` Configuration will adjust for how your features are arranged along the axis.
+
+| Top | Center | Fill |
+| ------------- | ------------- | ------------- |
+| <img src="https://raw.githubusercontent.com/SvenTiigi/WhatsNewKit/gh-pages/readMeAssets/ContentMode_Top.jpg" alt="ContentMode Top" /> | <img src="https://raw.githubusercontent.com/SvenTiigi/WhatsNewKit/gh-pages/readMeAssets/ContentMode_Center.jpg" alt="ContentMode Center" /> | <img src="https://raw.githubusercontent.com/SvenTiigi/WhatsNewKit/gh-pages/readMeAssets/ContentMode_Fill.jpg" alt="ContentMode Fill" />
+
+```swift
+// ContentMode Top
+configuration.itemsView.contentMode = .top
+
+// ContentMode Center
+configuration.itemsView.contentMode = .center
+
+// ContentMode Fill
+configuration.itemsView.contentMode = .fill
+```
+> ☝️ In default the ItemsView ContentMode  is set to `top`.
 
 ### Insets
 
@@ -209,7 +235,7 @@ configuration.titleView.insets = UIEdgeInsets(top: 50, left: 20, bottom: 15, rig
 configuration.completionButton.insets.bottom += 10
 ```
 
-### ImageSize
+### ImageSize 
 In order to define the size of your images for each of your feature you can set an [ImageSize](https://github.com/SvenTiigi/WhatsNewKit/blob/master/Sources/Configuration/WhatsNewViewController%2BItemsView.swift) on the `ItemsView` configuration.
 
 ```swift
@@ -222,9 +248,9 @@ configuration.itemsView.imageSize = .preferred
 // Use a custom height for each image
 configuration.itemsView.imageSize = .fixed(height: 25)
 ```
-> ☝️ By default the ItemsView ImageSize  is set to `preferred`.
+> ☝️ In default the ItemsView ImageSize  is set to `preferred`.
 
-### Animation
+### Animation 🎬
 <img align="right" width="300" src="https://raw.githubusercontent.com/SvenTiigi/WhatsNewKit/gh-pages/readMeAssets/Animations.gif" alt="Animations" />
 
 You can apply a [Animation](https://github.com/SvenTiigi/WhatsNewKit/blob/master/Sources/Configuration/WhatsNewViewController%2BAnimation.swift) to all components of the `WhatsNewViewController` via predefined animation types. In default all Animation properties are `nil` indicating no animation should be perfomed.
@@ -276,7 +302,7 @@ configuration.titleView.secondaryColor = .init(
     color: .whatsNewKitLightBlue
 )
 ```
-> ☝️ By default the secondaryColor is set to `nil`.
+> ☝️ In default the secondaryColor is set to `nil`.
 
 ### DetailButton
  <img width="150" src="https://raw.githubusercontent.com/SvenTiigi/WhatsNewKit/gh-pages/readMeAssets/detailButton.jpg" alt="DetailButton">
@@ -330,7 +356,8 @@ let completionButton = WhatsNewViewController.CompletionButton(
 )
 ```
 
-### HapticFeedback
+### HapticFeedback 📳
+
 You can enable on both `DetailButton` and `CompletionButton` haptic feedback when the user pressed one of these buttons. Either by setting the property or passing it to the initializer.
 
 ```swift
@@ -364,7 +391,7 @@ configuration.padAdjustment = { configuration in
 ```
 > ☝️ In default the `WhatsNewViewController.Configuration.defaultPadAdjustment` will be invoked.
 
-### WhatsNewVersionStore
+### WhatsNewVersionStore 💾
 <p align="center">
    <img width="750" src="https://raw.githubusercontent.com/SvenTiigi/WhatsNewKit/gh-pages/readMeAssets/WhatsNewVersionStore.jpg" alt="WhatsNewVersionStore">
 </p>
@@ -478,7 +505,7 @@ let version = WhatsNew.Version(
 )
 
 // Use a String literal
-let version = WhatsNew.Version(stringLiteral: "1.0.0")
+let version: WhatsNew.Version = "1.0.0"
 
 // Current Version in Bundle (Default)
 let version = WhatsNew.Version.current()
@@ -530,7 +557,7 @@ The `WhatsNew` struct is conform the `Codable` protocol which allows you to init
         {
             "title": "Open Source",
             "subtitle": "Contributions are very welcome 👨‍💻",
-            "image": "data:image/png;base64,R0lG42......."
+            "image": "iVBORw0KGgoA..."
         }
     ]
 }
@@ -555,6 +582,7 @@ let decoded = try? JSONDecoder().decode(WhatsNew.self, from: data)
 * [The iOS Times](http://theiostimes.com/issue-44.html)
 * [DZone](https://dzone.com/articles/this-week-in-mobile-11-june-2018)
 * [Brian Advent](https://youtu.be/zCHEpN1Wgz4)
+* [23 Amazing iOS UI Libraries written in Swift for the Past Year (v.2019)](https://medium.mybridge.co/23-amazing-ios-ui-libraries-written-in-swift-for-the-past-year-v-2019-3e5456318768)
 
 ## Contributing
 Contributions are very welcome 🙌 🤓
