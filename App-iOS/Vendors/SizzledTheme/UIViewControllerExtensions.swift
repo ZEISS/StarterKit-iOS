@@ -23,7 +23,7 @@ public extension UIViewController {
         }
     }()
     
-    public static func themeable() {
+    static func themeable() {
         _ = self.swizzleLoadView
     }
 }
