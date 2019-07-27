@@ -16,6 +16,11 @@ or alternatively using `brew cask install fastlane`
 
 # Available Actions
 ## iOS
+### ios appstore_release
+```
+fastlane ios appstore_release
+```
+Create release and publish to App Store
 ### ios screenshots
 ```
 fastlane ios screenshots
