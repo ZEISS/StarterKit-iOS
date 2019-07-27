@@ -59,7 +59,7 @@ platform :ios do
   end
 
   private_lane :is_azure_devops? do
-    !ENV["System.TeamProject"].nil?
+    !ENV["System_TeamProject"].nil?
   end
 
   private_lane :get_team_id do |options|
