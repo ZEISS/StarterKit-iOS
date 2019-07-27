@@ -1,0 +1,19 @@
+name: App Store Production
+
+trigger: master
+
+pool:
+  vmImage: 'macOS-10.13'
+
+variables:
+- group: Mobile-Applications-Key-Vault
+
+steps:
+
+- script: |
+   export FASTLANE_USER=$(APPLE-ITUNES-CONNECT-USER)
+   export FASTLANE_PASSWORD="$(APPLE-ITUNES-CONNECT-PASSWORD)"
+
+   fastlane appstore_release team_id:"$(APPLE-DEVELOPER-PORTAL-APPSTORE-TEAMID)" app_identifier:"$(BUNDLE-IDENTIFIER)"
+  displayName: 'Deploying to Apple App Store'
+  
