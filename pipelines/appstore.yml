@@ -14,8 +14,8 @@ steps:
 - script: /usr/local/bin/carthage update --platform ios
   displayName: 'Install frameworks with Carthage'
 - script: |
-   export FASTLANE_USER=$(APPLE-ITUNES-CONNECT-USER)
-   export FASTLANE_PASSWORD="$(APPLE-ITUNES-CONNECT-PASSWORD)"
+   export FASTLANE_USER=$(APPLE-DEVELOPER-PORTAL-APPSTORE-USER)
+   export FASTLANE_PASSWORD="$(APPLE-DEVELOPER-PORTAL-APPSTORE-PASSWORD)"
 
    fastlane appstore_release team_id:"$(APPLE-DEVELOPER-PORTAL-APPSTORE-TEAMID)" app_identifier:"$(BUNDLE-IDENTIFIER)"
   displayName: 'Deploying to Apple App Store'
