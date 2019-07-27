@@ -1,6 +1,7 @@
 name: App Store Production
 
-trigger: master
+trigger: 
+- master
 
 pool:
   vmImage: 'macos-latest'
