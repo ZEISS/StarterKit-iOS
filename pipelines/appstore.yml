@@ -3,7 +3,7 @@ name: App Store Production
 trigger: master
 
 pool:
-  vmImage: 'macOS-10.13'
+  vmImage: 'macos-latest'
 
 variables:
 - group: Mobile-Applications-Key-Vault
