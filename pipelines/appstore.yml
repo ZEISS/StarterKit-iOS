@@ -8,7 +8,7 @@ pool:
 
 variables:
 - group: Mobile-Applications-Key-Vault
-- group: ios-development
+- group: Project
 
 steps:
 - script: /usr/local/bin/carthage update --platform ios
